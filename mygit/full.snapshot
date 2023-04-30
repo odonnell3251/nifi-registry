@@ -1522,8 +1522,8 @@
           "name" : "PuElasticSearch",
           "outputPorts" : [ ],
           "position" : {
-            "x" : 808.0,
-            "y" : 136.0
+            "x" : 1080.0,
+            "y" : 104.0
           },
           "processGroups" : [ ],
           "processors" : [ {
@@ -4220,6 +4220,241 @@
             "schedulingStrategy" : "TIMER_DRIVEN",
             "style" : { },
             "type" : "org.apache.nifi.processors.standard.ReplaceText",
+            "yieldDuration" : "1 sec"
+          } ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "5e4f5929-a3fc-380f-8a16-ba0f3638bc8f",
+          "identifier" : "71654843-5832-36fa-a000-8254d5c86205",
+          "inputPorts" : [ ],
+          "instanceIdentifier" : "33de3133-a9e5-1f73-b569-0bc7c1c0c160",
+          "labels" : [ ],
+          "name" : "ingest",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 568.0,
+            "y" : 112.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ {
+            "autoTerminatedRelationships" : [ ],
+            "backoffMechanism" : "PENALIZE_FLOWFILE",
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.16.3"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "71654843-5832-36fa-a000-8254d5c86205",
+            "identifier" : "f5525b2b-55ca-3ddf-9fd2-6a861fba3227",
+            "instanceIdentifier" : "33de3134-a9e5-1f73-efa2-b703bd5b7c2f",
+            "maxBackoffPeriod" : "10 mins",
+            "name" : "HandleHttpRequest",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 1148.0,
+              "y" : 178.0
+            },
+            "properties" : {
+              "multipart-request-max-size" : "1 MB",
+              "Allow POST" : "true",
+              "Default URL Character Set" : "UTF-8",
+              "Allow DELETE" : "true",
+              "container-queue-size" : "50",
+              "multipart-read-buffer-size" : "512 KB",
+              "Allow OPTIONS" : "false",
+              "Allow GET" : "true",
+              "Allow HEAD" : "false",
+              "Listening Port" : "80",
+              "Client Authentication" : "No Authentication",
+              "Allow PUT" : "true"
+            },
+            "propertyDescriptors" : {
+              "multipart-request-max-size" : {
+                "displayName" : "Multipart Request Max Size",
+                "identifiesControllerService" : false,
+                "name" : "multipart-request-max-size",
+                "sensitive" : false
+              },
+              "parameters-to-attributes" : {
+                "displayName" : "Parameters to Attributes List",
+                "identifiesControllerService" : false,
+                "name" : "parameters-to-attributes",
+                "sensitive" : false
+              },
+              "Allow POST" : {
+                "displayName" : "Allow POST",
+                "identifiesControllerService" : false,
+                "name" : "Allow POST",
+                "sensitive" : false
+              },
+              "Hostname" : {
+                "displayName" : "Hostname",
+                "identifiesControllerService" : false,
+                "name" : "Hostname",
+                "sensitive" : false
+              },
+              "Default URL Character Set" : {
+                "displayName" : "Default URL Character Set",
+                "identifiesControllerService" : false,
+                "name" : "Default URL Character Set",
+                "sensitive" : false
+              },
+              "Allow DELETE" : {
+                "displayName" : "Allow DELETE",
+                "identifiesControllerService" : false,
+                "name" : "Allow DELETE",
+                "sensitive" : false
+              },
+              "Additional HTTP Methods" : {
+                "displayName" : "Additional HTTP Methods",
+                "identifiesControllerService" : false,
+                "name" : "Additional HTTP Methods",
+                "sensitive" : false
+              },
+              "container-queue-size" : {
+                "displayName" : "Container Queue Size",
+                "identifiesControllerService" : false,
+                "name" : "container-queue-size",
+                "sensitive" : false
+              },
+              "HTTP Context Map" : {
+                "displayName" : "HTTP Context Map",
+                "identifiesControllerService" : true,
+                "name" : "HTTP Context Map",
+                "sensitive" : false
+              },
+              "multipart-read-buffer-size" : {
+                "displayName" : "Multipart Read Buffer Size",
+                "identifiesControllerService" : false,
+                "name" : "multipart-read-buffer-size",
+                "sensitive" : false
+              },
+              "SSL Context Service" : {
+                "displayName" : "SSL Context Service",
+                "identifiesControllerService" : true,
+                "name" : "SSL Context Service",
+                "sensitive" : false
+              },
+              "Allow OPTIONS" : {
+                "displayName" : "Allow OPTIONS",
+                "identifiesControllerService" : false,
+                "name" : "Allow OPTIONS",
+                "sensitive" : false
+              },
+              "Allowed Paths" : {
+                "displayName" : "Allowed Paths",
+                "identifiesControllerService" : false,
+                "name" : "Allowed Paths",
+                "sensitive" : false
+              },
+              "Allow GET" : {
+                "displayName" : "Allow GET",
+                "identifiesControllerService" : false,
+                "name" : "Allow GET",
+                "sensitive" : false
+              },
+              "Allow HEAD" : {
+                "displayName" : "Allow HEAD",
+                "identifiesControllerService" : false,
+                "name" : "Allow HEAD",
+                "sensitive" : false
+              },
+              "Listening Port" : {
+                "displayName" : "Listening Port",
+                "identifiesControllerService" : false,
+                "name" : "Listening Port",
+                "sensitive" : false
+              },
+              "Client Authentication" : {
+                "displayName" : "Client Authentication",
+                "identifiesControllerService" : false,
+                "name" : "Client Authentication",
+                "sensitive" : false
+              },
+              "Allow PUT" : {
+                "displayName" : "Allow PUT",
+                "identifiesControllerService" : false,
+                "name" : "Allow PUT",
+                "sensitive" : false
+              }
+            },
+            "retriedRelationships" : [ ],
+            "retryCount" : 10,
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.HandleHttpRequest",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ ],
+            "backoffMechanism" : "PENALIZE_FLOWFILE",
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.16.3"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "71654843-5832-36fa-a000-8254d5c86205",
+            "identifier" : "25398c8e-9537-31f6-8a7f-8dc15e2bb9cc",
+            "instanceIdentifier" : "33de3135-a9e5-1f73-0493-226e1cf60846",
+            "maxBackoffPeriod" : "10 mins",
+            "name" : "HandleHttpResponse",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 544.0,
+              "y" : 184.0
+            },
+            "properties" : { },
+            "propertyDescriptors" : {
+              "HTTP Context Map" : {
+                "displayName" : "HTTP Context Map",
+                "identifiesControllerService" : true,
+                "name" : "HTTP Context Map",
+                "sensitive" : false
+              },
+              "Attributes to add to the HTTP Response (Regex)" : {
+                "displayName" : "Attributes to add to the HTTP Response (Regex)",
+                "identifiesControllerService" : false,
+                "name" : "Attributes to add to the HTTP Response (Regex)",
+                "sensitive" : false
+              },
+              "HTTP Status Code" : {
+                "displayName" : "HTTP Status Code",
+                "identifiesControllerService" : false,
+                "name" : "HTTP Status Code",
+                "sensitive" : false
+              }
+            },
+            "retriedRelationships" : [ ],
+            "retryCount" : 10,
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.HandleHttpResponse",
             "yieldDuration" : "1 sec"
           } ],
           "remoteProcessGroups" : [ ],
