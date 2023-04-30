@@ -1,14 +1,7 @@
 flows:
   83d4d9ba-f255-4c9c-8ab5-9934b01ba9b9: {ver: 1, file: fullflow.snapshot, comments: '',
     author: anonymous, created: 1682688042305, flowName: fullflow, flowDesc: ''}
-  9f7ae91c-e5c7-4de2-8a71-682229f49036:
-    ver: 4
-    file: full.snapshot
-    comments: |
-      second
-    author: anonymous
-    created: 1682855569099
-    flowName: full
-    flowDesc: ''
+  9f7ae91c-e5c7-4de2-8a71-682229f49036: {ver: 5, file: full.snapshot, comments: kjn,
+    author: anonymous, created: 1682857932059, flowName: full, flowDesc: ''}
 layoutVer: 1
 bucketId: 271f6d6a-36b9-4874-85d9-d57f331c330d
