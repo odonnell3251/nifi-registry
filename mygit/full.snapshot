@@ -16,9 +16,9 @@
           "destination" : {
             "comments" : "",
             "groupId" : "6e9e823a-7c38-365f-8120-62bca60e31e8",
-            "id" : "2d4f4b48-eae2-3411-a112-296a11382e8b",
-            "instanceIdentifier" : "c4b934d1-c8c2-3218-3faf-31aff2118427",
-            "name" : "fromBeats",
+            "id" : "8807236b-513e-3e6d-8f14-cac56fffa7a1",
+            "instanceIdentifier" : "3588ca0b-7474-3003-abe9-89845fe80972",
+            "name" : "fromKiosk",
             "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
