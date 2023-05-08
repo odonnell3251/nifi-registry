@@ -2112,6 +2112,39 @@
           }, {
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "4311fd70-10b2-3d00-a4df-132364dd06ff",
+              "id" : "b402f007-1fd4-3951-958a-62d116c4fe27",
+              "instanceIdentifier" : "0c053c9d-f7a4-175b-ac91-103e3fb476c6",
+              "name" : "LogAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "4311fd70-10b2-3d00-a4df-132364dd06ff",
+            "identifier" : "9158d112-c0a1-3858-bf88-cd569e9ddf5a",
+            "instanceIdentifier" : "0c053ca1-f7a4-175b-4b8a-7fe8229076a1",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "unmatched" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "4311fd70-10b2-3d00-a4df-132364dd06ff",
+              "id" : "d65f131e-88e1-378a-bec9-d9cd78ee2ab9",
+              "instanceIdentifier" : "0c053c9f-f7a4-175b-0af8-e8c5104015e2",
+              "name" : "RouteOnAttribute",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
             "bends" : [ {
               "x" : 680.0,
               "y" : 592.0
@@ -2437,7 +2470,9 @@
               "x" : 848.0,
               "y" : 384.0
             },
-            "properties" : { },
+            "properties" : {
+              "Schema File" : "/opt/nifi/nifi-current/schemas/filebeat-1.0.0.xsd"
+            },
             "propertyDescriptors" : {
               "XML Source Attribute" : {
                 "displayName" : "XML Source Attribute",
