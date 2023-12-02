@@ -10144,7 +10144,7 @@
             "bucketId" : "57d44545-f185-4811-a1b1-554622c43c3c",
             "flowId" : "d83a7827-9a56-421b-832d-8483f0e2e023",
             "registryUrl" : "http://nifi-registry:18080",
-            "version" : 1
+            "version" : 2
           }
         } ],
         "processors" : [ {
