@@ -1,6 +1,6 @@
 flows:
-  d83a7827-9a56-421b-832d-8483f0e2e023: {ver: 1, file: test.snapshot, comments: '',
-    author: anonymous, created: 1701513714265, flowName: test, flowDesc: ''}
+  d83a7827-9a56-421b-832d-8483f0e2e023: {ver: 2, file: test.snapshot, comments: tester2,
+    author: anonymous, created: 1701513834199, flowName: test, flowDesc: ''}
   ed9704d9-74a3-4d98-a29d-0bba58822f3a: {ver: 1, file: DICE-DEV66.snapshot, comments: version
       comment, author: anonymous, created: 1701513627222, flowName: DICE-DEV66, flowDesc: 'fix
       something '}

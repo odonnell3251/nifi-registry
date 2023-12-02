@@ -124,8 +124,8 @@
           "identifier" : "a5aefe88-5174-34a9-b280-31750dff83c7",
           "name" : "toValidateXML",
           "position" : {
-            "x" : 1608.0,
-            "y" : 336.0
+            "x" : 1472.0,
+            "y" : 408.0
           },
           "scheduledState" : "DISABLED",
           "type" : "OUTPUT_PORT"
