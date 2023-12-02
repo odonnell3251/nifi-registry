@@ -124,8 +124,8 @@
           "identifier" : "b5a40655-93dc-31b5-bd22-2b4deffd1ec4",
           "name" : "toValidateXML",
           "position" : {
-            "x" : 1480.0,
-            "y" : 352.0
+            "x" : 1464.0,
+            "y" : 584.0
           },
           "scheduledState" : "DISABLED",
           "type" : "OUTPUT_PORT"
@@ -234,36 +234,6 @@
             "destination" : {
               "comments" : "",
               "groupId" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
-              "id" : "6f851404-7779-37cb-8e3e-f90a5bcf2064",
-              "name" : "ParseSyslog",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
-            "identifier" : "671bb19a-9f57-35ce-81ce-905556db81f4",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "success" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
-              "id" : "7cde598a-1318-3fc4-bc2a-1f9b83c1fe11",
-              "name" : "ListenSyslog",
-              "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
               "id" : "76acffd5-365a-37d7-84b3-451fa3cd386c",
               "name" : "LogAttribute",
               "type" : "PROCESSOR"
@@ -283,6 +253,36 @@
               "groupId" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
               "id" : "c86c5f27-5cf0-3459-8969-300bcbce8f98",
               "name" : "HandleHttpResponse",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
+              "id" : "6f851404-7779-37cb-8e3e-f90a5bcf2064",
+              "name" : "ParseSyslog",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
+            "identifier" : "671bb19a-9f57-35ce-81ce-905556db81f4",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "d8c9badb-dbdc-33d3-903e-1bc34656bf48",
+              "id" : "7cde598a-1318-3fc4-bc2a-1f9b83c1fe11",
+              "name" : "ListenSyslog",
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
@@ -1253,57 +1253,6 @@
           "type" : "org.apache.nifi.processors.standard.HandleHttpRequest",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "failure" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.23.2"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "71654843-5832-36fa-a000-8254d5c86205",
-          "identifier" : "25398c8e-9537-31f6-8a7f-8dc15e2bb9cc",
-          "name" : "HandleHttpResponse",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 648.0,
-            "y" : 160.0
-          },
-          "properties" : {
-            "HTTP Context Map" : "110f79be-757e-3040-84ec-fe11668c27b5",
-            "HTTP Status Code" : "204"
-          },
-          "propertyDescriptors" : {
-            "HTTP Context Map" : {
-              "displayName" : "HTTP Context Map",
-              "identifiesControllerService" : true,
-              "name" : "HTTP Context Map",
-              "sensitive" : false
-            },
-            "Attributes to add to the HTTP Response (Regex)" : {
-              "displayName" : "Attributes to add to the HTTP Response (Regex)",
-              "identifiesControllerService" : false,
-              "name" : "Attributes to add to the HTTP Response (Regex)",
-              "sensitive" : false
-            },
-            "HTTP Status Code" : {
-              "displayName" : "HTTP Status Code",
-              "identifiesControllerService" : false,
-              "name" : "HTTP Status Code",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.HandleHttpResponse",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "success" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -1399,6 +1348,57 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.LogAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "failure" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.23.2"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "71654843-5832-36fa-a000-8254d5c86205",
+          "identifier" : "25398c8e-9537-31f6-8a7f-8dc15e2bb9cc",
+          "name" : "HandleHttpResponse",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 648.0,
+            "y" : 160.0
+          },
+          "properties" : {
+            "HTTP Context Map" : "110f79be-757e-3040-84ec-fe11668c27b5",
+            "HTTP Status Code" : "204"
+          },
+          "propertyDescriptors" : {
+            "HTTP Context Map" : {
+              "displayName" : "HTTP Context Map",
+              "identifiesControllerService" : true,
+              "name" : "HTTP Context Map",
+              "sensitive" : false
+            },
+            "Attributes to add to the HTTP Response (Regex)" : {
+              "displayName" : "Attributes to add to the HTTP Response (Regex)",
+              "identifiesControllerService" : false,
+              "name" : "Attributes to add to the HTTP Response (Regex)",
+              "sensitive" : false
+            },
+            "HTTP Status Code" : {
+              "displayName" : "HTTP Status Code",
+              "identifiesControllerService" : false,
+              "name" : "HTTP Status Code",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.HandleHttpResponse",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
