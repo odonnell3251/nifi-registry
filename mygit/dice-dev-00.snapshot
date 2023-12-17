@@ -749,7 +749,7 @@
             "retriedRelationships" : [ ],
             "retryCount" : 10,
             "runDurationMillis" : 0,
-            "scheduledState" : "ENABLED",
+            "scheduledState" : "DISABLED",
             "schedulingPeriod" : "0 sec",
             "schedulingStrategy" : "TIMER_DRIVEN",
             "style" : { },
