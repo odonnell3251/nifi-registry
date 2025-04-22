@@ -1,15 +1,9 @@
 flows:
   d83a7827-9a56-421b-832d-8483f0e2e023: {ver: 2, file: test.snapshot, comments: tester2,
     author: anonymous, created: 1701513834199, flowName: test, flowDesc: ''}
-  5d24f833-7d1f-49e3-9d07-8ebca2d1735f:
-    ver: 2
-    file: mikey.snapshot
-    comments: |
-      fred
-    author: anonymous
-    created: 1704739073272
-    flowName: mikey
-    flowDesc: ''
+  5d24f833-7d1f-49e3-9d07-8ebca2d1735f: {ver: 3, file: mikey.snapshot, comments: m,
+    author: 'CN=nifi-registry.raydonservices.co.uk, OU=NIFI', created: 1745353888831,
+    flowName: mikey, flowDesc: ''}
   c3d05802-a3ef-45d8-b31b-7c8a88803d20: {ver: 1, file: my-main.snapshot, comments: '',
     author: anonymous, created: 1701514266372, flowName: my-main, flowDesc: my-main}
   ed9704d9-74a3-4d98-a29d-0bba58822f3a: {ver: 4, file: DICE-DEV66.snapshot, comments: k,
